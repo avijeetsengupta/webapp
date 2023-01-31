@@ -7,7 +7,6 @@ const Auth: React.FC = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState<any>(null);
   const [active, setActive] = useState(false);
-
   const handleLogin = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     try {
@@ -16,7 +15,6 @@ const Auth: React.FC = () => {
       setError(error);
     }
   };
-
   const handleSignUp = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     try {
@@ -25,7 +23,6 @@ const Auth: React.FC = () => {
       setError(error);
     }
   };
-
   return (
     <div className="auth">
       {active ? (

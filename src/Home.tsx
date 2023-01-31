@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { fetchData } from "./api";
 import { filterAllMoviesByGenre } from "./util";
-// import { extractText } from "./util";
 import "./Home.scss";
 import { useHistory } from "react-router-dom";
 export interface IModalHome {
@@ -14,8 +13,6 @@ const Home: React.FC<IModalHome> = ({ movieId }: IModalHome) => {
   }, []);
   const history = useHistory();
   const allFilteredMovies = filterAllMoviesByGenre(data);
-  console.log(allFilteredMovies);
-
   const handleViewDetail = (val: number) => {
     movieId(val);
     history.push("/movie-detail");

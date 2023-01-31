@@ -17,7 +17,6 @@ const TopBar: React.FC<IModalTopBar> = ({ showSearchData }: IModalTopBar) => {
     setText(val);
     showSearchData(searchData);
     if (val === "") {
-      console.log("check");
       showSearchData([]);
     }
   };

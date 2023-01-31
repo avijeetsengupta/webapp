@@ -4,8 +4,6 @@ export interface IModalSearchDataComponent {
   showSearchData: Array<any>;
 }
 const SearchDataComponent: React.FC<IModalSearchDataComponent> = ({ showSearchData }: IModalSearchDataComponent) => {
-  console.log(showSearchData, "check");
-
   return (
     <>
       {showSearchData &&
