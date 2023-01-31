@@ -1,0 +1,8 @@
+.logBtn {
+  transition: 0.3s;
+
+  &:hover {
+    color: #f40612;
+    box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+  }
+}

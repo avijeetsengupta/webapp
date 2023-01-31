@@ -1,0 +1,53 @@
+.auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #333;
+
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #e50914;
+      box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+      &:hover {
+        background: #f40612;
+        box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+      }
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+
+  .auth-error {
+    color: #f40612;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
