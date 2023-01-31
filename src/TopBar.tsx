@@ -16,6 +16,7 @@ const TopBar: React.FC<IModalTopBar> = ({ showSearchData }: IModalTopBar) => {
   const handleChange = (val: string) => {
     setText(val);
     showSearchData(searchData);
+    history.push("/search");
     if (val === "") {
       showSearchData([]);
     }
