@@ -29,19 +29,23 @@ const Routes = () => {
           <div style={{ height: "calc(100vh - 8rem)", overflow: "scroll" }}>
             <Switch>
               <Route exact={true} path="/" render={() => <Redirect to="/home" />} />
+
+              <Route exact={true} path="/search">
+                <SearchDataComponent showSearchData={showSearchData} />
+              </Route>
               <Route exact={true} path="/home">
-                {showSearchData.length > 0 ? (
+                {/* {showSearchData.length > 0 ? (
                   <SearchDataComponent showSearchData={showSearchData} />
                 ) : (
-                  <Home movieId={setShowMovieId} />
-                )}
+                  )} */}
+                <Home movieId={setShowMovieId} />
               </Route>
               <Route exact={true} path="/movie-detail">
-                {showSearchData.length > 0 ? (
+                {/* {showSearchData.length > 0 ? (
                   <SearchDataComponent showSearchData={showSearchData} />
                 ) : (
-                  <MovieDetailComponent movieIdShow={movieIdShow} />
-                )}
+                  )} */}
+                <MovieDetailComponent movieIdShow={movieIdShow} />
               </Route>
             </Switch>
           </div>

@@ -24,7 +24,7 @@ const SearchDataComponent: React.FC<IModalSearchDataComponent> = ({ showSearchDa
               <img src={val.show.image && `${val.show.image.medium}`} alt="oops movieImg" />
             </div>
             <div className="desBox">
-              <div className="searchHeader">{val.show.name}</div>
+              <div className="searchHeader" style={{ margin: "10px 0" }}>{val.show.name}</div>
               <div className="searchDescription">{extractText(val.show)}</div>
             </div>
           </div>

@@ -8,7 +8,7 @@ export interface IModalMovieDetailComponent {
 const Star = ({ selected, half }: any) => <span>{selected ? "\u2605" : half ? "\u{1F31F}" : "\u2606"}</span>;
 const StarRating = ({ rating }: any) => {
   let stars = [];
-  const roundedRating = Math.round((rating / 2) * 2) / 2;
+  const roundedRating = Math.round((rating / 2) * 1.9) / 2;
   for (let i = 1; i <= 5; i++) {
     stars.push(<Star key={i} selected={i <= roundedRating} half={i === roundedRating && roundedRating % 1 !== 0} />);
   }
