@@ -6,7 +6,7 @@ You can check out hosted link in here [Web App Tv](https://webapp-tv.netlify.app
 
 For login id: avijeet@gmail.com, pass: 9174818405
 
-And I have used useHistory, data flow through props and callbacks functions. 
+And I have used useHistory, data flow through props, callbacks functions, string converter using below snippet.
 
 const parser = new DOMParser(); 
 
